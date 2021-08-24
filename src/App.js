@@ -8,7 +8,6 @@ function App() {
       <Navbar />
       {/* <h1>CSS AMU Website Frontend</h1> */}
       <Carousel />
-
       <Team />
     </div>
   );
