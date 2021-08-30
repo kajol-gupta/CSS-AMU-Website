@@ -31,14 +31,13 @@ const content = [
 
 const Carousel = () => (
 	<div className="carousel">
-		<Slider  autoplay ={1000} className="slider-wrapper">
+		<Slider  autoplay ={0} className="slider-wrapper">
 			{content.map((item, index) => (
 				<div 
 					key={index}
 					className="slider-content"
-					style={{ background: `url('${item.image}') no-repeat center center  ` }}
-          anims
 				>
+                 <img src={item.image} alt="logo"/>
 					<div className="inner">
 						<h1 className="title">{item.title}</h1>
 						<p>{item.description}</p>
