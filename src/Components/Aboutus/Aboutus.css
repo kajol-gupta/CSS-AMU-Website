@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html{
+      font-size:62.5%;
+  }
+  body{
+    background-color:#fff;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+
+  .heading{
+    padding:2rem 0rem;
+    height: auto;
+    width:100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3.75rem;
+    font-weight: 1000;
+    color: black;
+    margin-bottom: 0.5rem;
+  
+  }
+  
+
+  .information{
+      padding :2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+  }
+  
+    .container{
+       display:flex; 
+       justify-content: center;
+       padding :1rem;
+       justify-content: space-evenly;
+      flex-wrap:wrap; 
+       
+    }
+      
+      
+   .cards{
+       flex:0 1 25%;
+      justify-content: center;
+      margin:3rem;
+      
+  }
+
+  .card{
+    margin:6%;
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color:#fff;
+    overflow: hidden;
+    width: auto;
+    height: auto;
+    padding:1rem ;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-radius: 2rem;
+    box-shadow: 0rem 1rem 2rem -1rem;
+    
+  }
+  
+    .card:hover{
+    box-shadow: 0rem 2rem 2rem -1rem;
+  }  
+  
+  .card_img{
+    margin-left: auto;
+    margin-right: auto;
+    height: 7rem;
+    width: 50%;
+    align-items: center;
+    display:block;
+    justify-content: center;
+    border-top-left-radius: 10rem;
+    border-top-right-radius: 10rem;
+    border-radius: 5rem;
+  }
+  .card_img:hover{
+    transform: scale(1.05,1.05);
+  }
+  
+  .card_info{
+    background-color:#fff;
+    width: auto;
+    height: auto;
+    padding: 1rem 2rem 2rem 2rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
+  }
+  
+  .card_category{
+    font-family:sans-serif;
+    text-transform: uppercase;
+    
+    font-size: 2rem;
+    /* letter-spacing: 0rem; */
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:blue;
+    background-color:#fff;
+    text-align: center;
+  }
+  
+   
+  .button{ 
+     margin-top: 1rem;
+    margin-bottom: 0.5rem; 
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .button a{
+      color:blue;
+  }
+    
+  .button a:hover{
+    color:red;
+  }
+
+  /* responsive code */
+
+ @media (max-width: 768px) {
+     html{
+        font-size:50%;
+    } 
+}
+
+ @media (max-width: 450px) {
+     html{
+         font-size: 45%;
+     }
+     .container{
+       display:flex;
+       flex-direction: column;
+      }
+      .card{
+        margin:3%;
+      }
+  } 
+      
